@@ -1,0 +1,33 @@
+{
+  "name": "problem-solving",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rimraf ./dist/*",
+    "webpack:dev": "webpack --watch --config webpack.config.js",
+    "webpack:prod": "webpack --watch --config webpack.config.js",
+    "build:dev": "SET NODE_ENV=development&& npm run clean && npm run webpack:dev -- --env mode=development",
+    "build:prod": "SET NODE_ENV=development&& npm run clean && npm run webpack:prod -- --env mode=production"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "typescript": "^4.4.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.5",
+    "@babel/plugin-proposal-object-rest-spread": "^7.14.7",
+    "@babel/plugin-transform-runtime": "^7.15.0",
+    "@babel/preset-env": "^7.15.4",
+    "babel-loader": "^8.2.2",
+    "cross-env": "^7.0.3",
+    "html-webpack-plugin": "^5.3.2",
+    "rimraf": "^3.0.2",
+    "ts-loader": "^9.2.5",
+    "webpack": "^5.52.0",
+    "webpack-cli": "^4.8.0",
+    "webpack-dev-server": "^4.1.1"
+  }
+}
